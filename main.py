@@ -19,7 +19,8 @@ descriptors = find_descriptors(orb, cv2images)
 executor = ThreadPoolExecutor()
 running_tasks = []
 
-cap = cv2.VideoCapture(0)
+url = 'http://192.168.1.88:8080/video'
+cap = cv2.VideoCapture(url)
 
 previous_image = ""
 
